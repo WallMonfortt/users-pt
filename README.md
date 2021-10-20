@@ -8,7 +8,7 @@ _utiliza el comando_
 
 ```
 git clone https://github.com/WallMonfortt/src (Backend)
-git clone 
+git clone https://github.com/WallMonfortt/users-pt (Frontend)
 ```
 
 ### Pre-requisitos 📋
