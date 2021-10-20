@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Users CRUD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_aplicación web ,consumiendo un API(https://github.com/WallMonfortt/src)_
 
-## Available Scripts
+## Para clonar los repositorios necesarios 🚀
 
-In the project directory, you can run:
+_utiliza el comando_
 
-### `yarn start`
+```
+git clone https://github.com/WallMonfortt/src (Backend)
+git clone 
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Pre-requisitos 📋
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_Para el uso y edición de estos repositorio es necesario tener instalado en el equipo : react , nodeJS & MySQL_
 
-### `yarn test`
+_Crea la base de Datos en MySQL con el siguiente script:_
+```
+CREATE TABLE `user` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `age` int NOT NULL
+);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `yarn build`
+### Instalación 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Una vez completado los prerrequisitos y clonado los repositorios deberas hacer la instalacion de las dependencias_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Dentro de la carpeta de cada proyecto mediante el terminal ejecuta:_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm i 
+```
+o
+```
+npm install
+```
 
-### `yarn eject`
+_Agrega al proyecto de backend(https://github.com/WallMonfortt/src) un archivo .env siguiendo la estructura del archivo.envExample o de la siguiente manera:_
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+PORT=9000
+DB_USERNAME=root(o el nombre de usuario que utilizaste en MySQL)
+DB_PASSWORD=(la contraseña que usas para conectarte a tu base de datos local MySQL)
+DB_HOST=localhost
+DB_NAME=users
+```
+_dentro del proyecto backend ejecuta el comando:_
+```
+npm run dev  (para inicializar el servidor)
+```
+_Y dentro del proyecto Frontend ejecuta el comando:_
+```
+npm start  (para inicializar la aplicación web)
+```
+_Y listo! ahora podras visualizar y hacer modificaciones al codigo del repositorio_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Despliegue 📦
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+__
 
-## Learn More
+## Construido con 🛠️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Las herramientas ocupadas para el desarrollo fronend de esta prueba son_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [React](https://reactjs.org/) - La libreria usada
+* [Redux](https://redux.js.org/) - Gestión de estado
+* [SASS](https://sass-lang.com/) - preprocesador CSS 
+* [NODEjs](https://nodejs.org/en/about/) - Entorno de ejecución
+* [axios](https://www.npmjs.com/package/axios) - Manejo de peticiones
+* [boostrap, reacstrap](https://reactstrap.github.io/) - Container, Table
+* [React-hook-form](https://react-hook-form.com/) - Manejo de formulario
+* [sweetAlert](https://sweetalert2.github.io/) - Manejo de Alertas
 
-### Code Splitting
+_Las herramientas ocupadas para el desarrollo backend de esta prueba son_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [NODEjs](https://nodejs.org/en/) - La libreria usada
+* [express](https://nodejs.org/en/) - Entorno de desarrollo
+* [nodemon](https://www.npmjs.com/package/nodemon) - reinicio de servidor
+* [Sequelize](https://www.npmjs.com/package/sequelize) - Multi dialect ORM
+* [dotenv](https://www.npmjs.com/package/dotenv) - Variables de entorno
+* [corns](https://www.npmjs.com/package/cors) - peticiones al servidor
+* [MySQL](https://www.mysql.com/) - Base de datos
 
-### Analyzing the Bundle Size
+## Autor ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Dynamic Solutions** - *Requisitos de la aplicación web* 
 
-### Making a Progressive Web App
+* **Wal-Monfortt** - *Jr Developer* - [WalMonfortt](https://wal-monfortt.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+⌨️ con ❤️ por [WallMonfortt](https://github.com/WallMonfortt) 😊
